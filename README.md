@@ -1,46 +1,93 @@
-# Getting Started with Create React App
+# Voogle Search
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Voogle Search is a web application that allows users to search for GitHub repositories and view their details. It provides a user-friendly interface for searching, browsing, and exploring GitHub repositories.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [File Structure](#file-structure)
+- [Dependencies](#dependencies)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To get started with Voogle Search, follow these steps:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Clone the repository:
 
-### `npm test`
+   ```bash
+   git clone https://github.com/bangarusaivivek/github-search.git
+   ```
+2. Install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   cd github-search
+   npm install
+   ```
+3. Run the development server::
 
-### `npm run build`
+   ```bash
+   npm start
+   ```
+4. Open your web browser and navigate to http://localhost:3000 to access the application.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Once the application is running, you can use the search bar to enter keywords and search for GitHub repositories. You can also navigate through the search results, view repository details, and explore related repositories.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
+- **Search Bar**: Allows users to enter keywords and search for GitHub repositories.
+- **Navigation Buttons**: Enable users to navigate through search results and view previous or next repositories.
+- **Infinite Scrolling**: Provides seamless browsing experience by loading more repositories as the user scrolls down.
+- **Keyboard Navigation**: Supports keyboard navigation for enhanced accessibility, including arrow key navigation and selection.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## File Structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project is organized as follows:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **src/**: Contains all source code files.
+  - **components/**: Reusable UI components.
+    - **Navigation/**: Components related to navigation.
+    - **RepoCard/**: Components for displaying repository details.
+    - **Search/**: Components for search functionality.
+  - **features/**: Organized feature-specific components, hooks, services, and store.
+    - **home/**: Components specific to the home feature.
+      - **components/**: Components specific to the home feature.
+      - **hooks/**: Custom hooks specific to the home feature.
+      - **services/**: Services specific to the home feature.
+      - **store/**: Redux store setup specific to the home feature.
+  - **hooks/**: Custom React hooks used throughout the application.
+  - **services/**: API services for fetching data.
+  - **store/**: Redux store configuration and slice reducers.
+  - **utils/**: Utility functions and helper modules.
+- **public/**: Public assets and HTML template.
+  - **icons/**: Icons used in the application.
+- **README.md**: Markdown file containing project documentation.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Dependencies
 
-## Learn More
+The main dependencies of the project include:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- React: A JavaScript library for building user interfaces.
+- React Redux: Official Redux binding for React.
+- Redux Toolkit: Simplified Redux setup with utilities and abstractions.
+- Axios: Promise-based HTTP client for making API requests.
+- TypeScript: A statically typed superset of JavaScript for improved developer productivity.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
+
+Contributions to Voogle Search are welcome! To contribute, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes and push to your fork.
+4. Submit a pull request explaining your changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
